@@ -19,6 +19,8 @@ import javax.swing.JFrame;
  */
 public class JFrameTest {
         public static void main(String[] args) throws IOException, ClassNotFoundException {
+        
+        //JFrame second instantiating takes less time
         JFrame f;
         long start, end;
 
