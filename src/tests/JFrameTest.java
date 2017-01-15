@@ -5,6 +5,7 @@
  */
 package tests;
 
+import java.awt.HeadlessException;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -20,23 +21,25 @@ import javax.swing.JFrame;
 public class JFrameTest {
         public static void main(String[] args) throws IOException, ClassNotFoundException {
         
+        jFrameCreationTest();
+        //UUID serialization and deserialization test passes.
+        checkUUID();
+        System.exit(0);        
+        
+    }
+
+    private static void jFrameCreationTest() throws HeadlessException {
         //JFrame second instantiating takes less time
         JFrame f;
         long start, end;
-
         start = System.currentTimeMillis();
         f = new JFrame("JFrame");
         end = System.currentTimeMillis();
-
         System.out.println("JFrame first creation took " + (end - start) + " ms");
-
         start = System.currentTimeMillis();
         f = new JFrame("JFrame");
         end = System.currentTimeMillis();
-
         System.out.println("JFrame second creation took " + (end - start) + " ms");
-        System.exit(0);        
-        
     }
 
     private static void checkUUID() throws IOException, RuntimeException, ClassNotFoundException {
