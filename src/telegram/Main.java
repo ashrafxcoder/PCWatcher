@@ -26,13 +26,14 @@ public class Main {
 //            
 //        }
         
-//        callingCode.forEach((k, v) -> {
-//            System.out.print("Key is: " + k + " : ");
-//            v.forEach(c -> {
-//                System.out.print(" " + c + " ");
-//            });
-//            System.out.println("");
-//        });
+        //Iterating through all the calling code keys
+        callingCode.forEach((k, v) -> {
+            System.out.print("Key is: " + k + " : ");
+            v.forEach(c -> {
+                System.out.print(" " + c + " ");
+            });
+            System.out.println("");
+        });
         
         
         System.out.println(getHexBytes("AShraF"));
