@@ -23,8 +23,8 @@ public class TLRPCClassCounter {
     public static void main(String[] args) {
         
         
-        System.out.println(join());
-        
+        //System.out.println(join());
+        countLinesINTLRPC();
     }
 
     
