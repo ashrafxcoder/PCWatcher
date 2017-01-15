@@ -22,9 +22,8 @@ import java.util.stream.Stream;
 public class TLRPCClassCounter {
     public static void main(String[] args) {
         
-        
-        //System.out.println(join());
-        countLinesINTLRPC();
+        System.out.println(join());
+        //countLinesINTLRPC();
     }
 
     
